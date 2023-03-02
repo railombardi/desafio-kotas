@@ -18,4 +18,21 @@ export default {
       commit("setPokemons", data);
     });
   },
+  async getCurrentPokemon({ commit }, id) {
+    const { data: data } = await Axios.get(
+      `https://pokeapi.co/api/v2/pokemon/${id}`
+    );
+    commit("setCurrentPokemon", data);
+  },
+  async getPokemonAbilities({ commit }, endpoints) {
+    let abilities = [];
+    endpoints.map(async (url) => {
+      let { data: data } = await Axios.get(url);
+      data = data.effect_entries.find(
+        (e) => e.language.name == "en"
+      ).short_effect;
+      abilities.push(data);
+    });
+    commit("setPokemonAbilities", abilities);
+  },
 };

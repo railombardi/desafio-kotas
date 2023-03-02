@@ -5,4 +5,10 @@ export default {
   incrementOffset(state) {
     state.offset += 24;
   },
+  setCurrentPokemon(state, pokemon) {
+    state.currentPokemon = pokemon;
+  },
+  setPokemonAbilities(state, abilities) {
+    state.pokemonAbilities = abilities;
+  },
 };
