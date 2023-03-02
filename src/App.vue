@@ -19,7 +19,7 @@ export default {
 #app {
   font-family: $font-mulish;
   overflow: hidden;
-  height: 100vh;
+  height: 100%;
   .nav {
     background: white;
     padding: 12px 0 8px 16px;
@@ -33,6 +33,10 @@ export default {
     width: 100%;
     height: 100%;
     margin: 0 auto;
+    padding-top: 18px;
+    @include desktop() {
+      padding-right: 36px;
+    }
   }
 }
 </style>
