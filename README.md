@@ -1,24 +1,22 @@
 # desafio-kotas
+Desafio técnico de front-end proposto pela empresa Kotas, onde foi desenvolvido um projeto consumindo a API PokeApi (https://pokeapi.co/). 
 
-## Project setup
-```
-npm install
-```
+## Link do Projeto hospedado
+https://desafio-kotas-railombardi.netlify.app/
 
-### Compiles and hot-reloads for development
+## Instalação
+Primeiramente você deve rodar o comando:
+```bash
+    npm install
 ```
-npm run serve
-```
+Instalando e atualizando todas dependencias o projeto estará apto para ser utilizado.
+São alguns comandos: 
 
-### Compiles and minifies for production
+Para compilar e rodar em modo desenvolvimento com hot-reload:
+```bash
+ npm run serve
 ```
-npm run build
+Para compilar e minificar em modo produção
+```bash
+ npm run build
 ```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
